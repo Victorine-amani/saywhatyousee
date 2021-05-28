@@ -1,0 +1,96 @@
+.body1 {
+    font-family: Arial;
+}
+
+.split {
+    height: 617px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    padding-top: 20px;
+}
+
+.left {
+    width: 70%;
+    left: 0;
+    background: transparent;
+    background-image: url("brain.jpg");
+    background-size: cover;
+}
+
+.right {
+    width: 30%;
+    right: 0;
+    background-size: cover;
+    background-color: rgb(1, 8, 36);
+    color: rgb(83, 248, 250);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.footer1 {
+    text-align: center;
+    background-color: rgb(119, 119, 119);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    align-items: flex-end;
+}
+
+h1 {
+    font-family: HelveticaNeueW01-65Medi;
+    font-size: xxx-large;
+}
+
+#butt {
+    border-radius: 200px;
+    outline: none;
+}
+
+.body2 {
+    background-color: rgb(1, 8, 36);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 5px;
+}
+
+.grid-item {
+    background: transparent;
+    padding: 5px;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+#trial {
+    display: none;
+}
+
+.grid-item:hover+#trial {
+    display: block;
+    color: red;
+    cursor: pointer;
+}
